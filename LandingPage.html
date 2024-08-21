@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FitLife Gym</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            color: #333;
+            line-height: 1.6;
+        }
+
+        .header {
+            background: #333;
+            color: #fff;
+            padding: 20px 0;
+            text-align: center;
+        }
+
+        .navbar {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 0 20px;
+        }
+
+        .navbar ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            display: flex;
+        }
+
+        .navbar ul li {
+            margin-left: 20px;
+        }
+
+        .navbar ul li a {
+            color: #fff;
+            text-decoration: none;
+            padding: 5px 10px;
+            transition: background 0.3s;
+        }
+
+        .navbar ul li a:hover {
+            background: #575757;
+            border-radius: 5px;
+        }
+
+        .hero-section {
+            background: url('https://via.placeholder.com/1500x500') no-repeat center center/cover;
+            height: 500px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            color: #fff;
+        }
+
+        .hero-section h2 {
+            font-size: 3em;
+            margin-bottom: 10px;
+        }
+
+        .hero-section p {
+            font-size: 1.5em;
+            margin-bottom: 20px;
+        }
+
+        .hero-section button {
+            padding: 10px 20px;
+            font-size: 1.2em;
+            background: #ff9f00;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background 0.3s;
+        }
+
+        .hero-section button:hover {
+            background: #e68a00;
+        }
+
+        .about,
+        .services,
+        .contact {
+            padding: 50px 20px;
+            text-align: center;
+        }
+
+        .services .service-cards {
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+        }
+
+        .services .card {
+            background: #fff;
+            border: 1px solid #ddd;
+            border-radius: 10px;
+            padding: 20px;
+            width: 30%;
+            margin: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .contact form {
+            max-width: 600px;
+            margin: 0 auto;
+            text-align: left;
+        }
+
+        .contact form label {
+            display: block;
+            margin-bottom: 5px;
+            font-weight: bold;
+        }
+
+        .contact form input,
+        .contact form textarea {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 20px;
+            border-radius: 5px;
+            border: 1px solid #ddd;
+        }
+
+        .contact form button {
+            padding: 10px 20px;
+            font-size: 1em;
+            background: #00baff;
+            border: none;
+            border-radius: 5px;
+            color: #fff;
+            cursor: pointer;
+            transition: background 0.3s;
+        }
+
+        .contact form button:hover {
+            background: #009ecc;
+        }
+
+        .footer {
+            background: #333;
+            color: #fff;
+            text-align: center;
+            padding: 10px 0;
+        }
+    </style>
+</head>
+
+<body>
+
+    <header class="header">
+        <nav class="navbar">
+            <div class="logo">
+                <h1>FitLife Gym</h1>
+            </div>
+            <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+        <div class="hero-section" id="home">
+            <h2>Welcome to FitLife Gym</h2>
+            <p>Your Journey to a Healthier Life Begins Here!</p>
+            <button onclick="alert('Join Now!')">Join Now</button>
+        </div>
+    </header>
+
+    <section class="about" id="about">
+        <h2>About Us</h2>
+        <p>FitLife Gym is dedicated to helping you achieve your fitness goals. Our state-of-the-art equipment and certified
+            trainers are here to provide you with the best workout experience.</p>
+    </section>
+
+    <section class="services" id="services">
+        <h2>Our Services</h2>
+        <div class="service-cards">
+            <div class="card">
+                <h3>Personal Training</h3>
+                <p>One-on-one training with our expert trainers to tailor a fitness plan just for you.</p>
+            </div>
+            <div class="card">
+                <h3>Group Classes</h3>
+                <p>Join our group classes to stay motivated and work out with others.</p>
+            </div>
+            <div class="card">
+                <h3>Nutrition Plans</h3>
+                <p>Get customized nutrition plans to complement your workout routine.</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="contact" id="contact">
+        <h2>Contact Us</h2>
+        <form>
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" required></textarea>
+
+            <button type="submit">Send Message</button>
+        </form>
+    </section>
+
+    <footer class="footer">
+        <p>&copy; 2024 FitLife Gym. All rights reserved.</p>
+    </footer>
+
+</body>
+
+</html>
